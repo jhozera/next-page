@@ -1,0 +1,821 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: #171717;
+    height: auto;
+    width: 100%;
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to left, #00ff5f, #183939);
+    width: 100%;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    /* border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px; */
+}
+
+/* .pr-pri{
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+    margin: 100px;
+    height: 50vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    
+} */
+
+h1{
+    font-size: 45px;
+}
+
+.button{
+    display: flex;
+    justify-content: space-evenly;  
+    padding: 30px;
+    gap: 70px;
+    margin: 0;
+
+
+}
+
+.button-a, .button-b, .button-c, .button-d {
+    padding: 20px;
+    background: linear-gradient(to left, #00ff5f, #183939);
+    height: 200px;
+    width: 250px;
+    font-size: 25px;
+    border-radius: 20px;
+
+}
+
+.button a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+.centralizador {
+    display: grid;
+    place-items: center; /* Centraliza horizontal e verticalmente */
+    height: 80vh; /* Ocupa toda a altura da tela */
+}
+
+.caixa-van {
+    display: grid;
+    grid-template-areas: 
+        "bloco1 bloco2 bloco3"
+        "bloco1 bloco4 bloco5";
+    grid-template-columns: 2fr 2fr 2fr;
+    gap: 10px;
+    padding: 10px;
+    max-width: 1200px; /* Largura máxima do grid */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    height: 700px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bloco1 {
+    grid-area: bloco1;
+    background-size: cover;
+    background-image: url('./imagem/Vantagens-WPP.jpg');
+    background-position: center;
+    color: #141414;
+    border: solid 3px #171717;
+  }
+  
+  .bloco2 {
+    grid-area: bloco2;
+    background-image: url('./imagem/Vantagens-BSC.jpg');
+    background-size: cover;
+    background-position: center;
+    border: solid 3px #171717;
+
+  }
+  
+  .bloco3 {
+    grid-area: bloco3;
+    background-image: url('./imagem/Vantagens-Loja.jpg');
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    color: #fff;
+    border: solid 3px #171717;
+
+  }
+  
+  .bloco4 {
+    grid-area: bloco4;
+    background-image: url('./imagem/tem\ as\ melhores\ condições\ \(1\).png');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    border: solid 3px #171717;
+
+  }
+  
+  .bloco5 {
+    grid-area: bloco5;
+    background-image: url('./imagem/O-banco-da-PJ-Bradesco-lanca-campanha-exclusiva-para-empresarios.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    border: solid 3px #171717;
+
+  }
+
+
+  .overlay {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.overlay p {
+    margin: 0 0 10px;
+    font-size: 16px;
+}
+
+.overlay a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    background: #007bff;
+    padding: 2px 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    font-size: 15px;
+}
+
+.overlay a:hover {
+    background: #0056b3;
+}
+
+.bloco1, .bloco2, .bloco3, .bloco4, .bloco5, .bloco6 {
+    position: relative; 
+}
+  
+.caixa-van a{
+    background-color: #104727;
+    color: white;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    height: 40px;
+    width: 80%;
+    align-content: center;
+    margin: 10px;
+}
+
+.caixa-van h2{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+
+}
+
+.caixa-mel{
+    background-color: #171717;
+    height: 100vh;
+    width: 100%;
+}
+
+.trc-pr {
+    display: grid;
+    grid-template-areas: 
+    "trc-dt trc-dt"
+    "trc-dt trc-dt"
+    ;
+    place-content: center;
+    padding: 0;
+    gap: 10px;
+    height: 60vh;
+    
+  }
+
+.trc-dt {
+    position: relative; 
+    width: 400px;
+    height: 180px; 
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.trc-pr a{
+    text-decoration: none;
+    color: white;
+}
+
+.trc-dt:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.7);
+}
+
+.trc-dt img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.trc-dt .text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); 
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+
+
+}
+
+.trc-dt .text-overlay strong {
+    font-size: 22px;
+    color: #ffffff; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.title-bra{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    padding-top: 0;
+    margin: 0;
+}
+
+
+
+.caixa-app{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 75vh;
+}
+
+
+.app-geral{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.app{
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    margin: 25px;
+    border-radius: 20px;
+}
+
+.caixa-app h4{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.caixa-app p{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.highlighted-textr {
+    display: flex;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .highlighted-textr::before {
+    content: "";
+    display: inline-block;
+    width: 4px; 
+    height: 40px;
+    background-color: #00ff5f; 
+    margin-right: 10px; 
+    text-align: center;
+ }
+
+
+
+.footer-content {
+    background: linear-gradient(to left, #00ff5f, #183939);
+    color: #ffffff;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  
+  .footer-text {
+    max-width: 400px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0 0 10px;
+    color: #ffffff; 
+  }
+  
+  .footer-info {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #dcdcdc;
+  }
+
+  .footer-bottom {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #b5b5b5;
+  }
+ 
+
+  .highlighted-text {
+    display: flex;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: center;
+    text-align: center;
+    padding-top: 100px;
+  }
+
+  .highlighted-text::before {
+    content: "";
+    display: inline-block;
+    width: 4px; 
+    height: 40px;
+    background-color: #00ff5f; 
+    margin-right: 10px; 
+    text-align: center;
+ }
+  .description {
+    color:  white;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding: 20px;
+  }
+
+
+
+  .carousel {
+    position: relative;
+    width: auto;
+    height: 600px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.slide img {
+    width: 100%;
+    height: 600px; 
+    object-fit: fill; 
+    display: block;
+}
+
+.carousel input {
+    display: none;
+}
+
+#slide1:checked ~ .slides {
+    transform: translateX(0%);
+}
+
+#slide2:checked ~ .slides {
+    transform: translateX(-100%);
+}
+
+#slide3:checked ~ .slides {
+    transform: translateX(-200%);
+}
+
+#slide4:checked ~ .slides {
+    transform: translateX(-300%);
+}
+
+#slide5:checked ~ .slides {
+    transform: translateX(-400%);
+}
+
+.navigation {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 50px;
+}
+
+.navigation label {
+    background-color: #ddd;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+#slide1:checked ~ .navigation label[for="slide1"],
+#slide2:checked ~ .navigation label[for="slide2"],
+#slide3:checked ~ .navigation label[for="slide3"],
+#slide4:checked ~ .navigation label[for="slide4"],
+#slide5:checked ~ .navigation label[for="slide5"] {
+    background-color: #555;
+}
+
+
+.pr-nav a{
+    text-decoration: none;
+    color: white;
+}
+/* @media (min-width: 1200px) {
+    .trc-pr{
+        height: 110vh;
+       }
+    
+  
+} */
+
+/* Notebooks (entre 992px e 1200px) */
+@media (max-width: 1200px) {
+    body {
+        overflow-x: hidden;
+        width: 100%;
+        height: auto;
+  
+      }
+  
+    nav{
+        width: 100%;
+    }
+    
+
+   .title-bra{
+    text-align: center;
+   }
+
+   .trc-pr{
+    height: 90vh;
+   }
+
+   .caixa-van{
+    height: 60vh;
+    padding: 20px;
+   }
+
+   .app-geral{
+    flex-direction: column;
+   }
+
+
+   .caixa-app{
+    overflow: hidden; 
+    max-width: 100%;
+    margin: 0 auto;
+    height: 100%;
+   }
+
+}
+
+/* Tablets (entre 768px e 992px) */
+@media (max-width: 992px) {
+    body {
+        overflow-x: hidden;
+        width: 100%;
+        height: auto;
+  
+      }
+  
+    nav{
+        width: 100%;
+    }
+    
+   .button{
+    flex-wrap: wrap;
+   }
+   
+
+   .title-bra{
+    text-align: center;
+    padding-top: 100px;
+   }
+
+   .trc-pr{
+    height: 90vh;
+   }
+
+   .caixa-van{
+    height: 90vh;
+   }
+
+   .app-geral{
+    flex-direction: column;
+   }
+
+   .button-a, .button-b, .button-c, .button-d{
+    display: flex;
+    height: 100px;
+    align-items: center;
+
+   }
+
+   .caixa-app{
+    overflow: hidden; 
+    max-width: 100%;
+    margin: 0 auto;
+    height: 100%;
+   }
+
+   .trc-pr{
+    grid-template-areas: 
+    "trc-dt"
+    "trc-dt"
+    "trc-dt"
+    "trc-dt"
+    ;
+
+}
+
+.carousel{ 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  
+  }
+  
+  .slide img {
+      width: 100%;
+      height: 100%; 
+      object-fit: cover; 
+      display: block;
+  }
+
+}
+
+/* Celulares (abaixo de 768px) */
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+        width: 100%;
+        height: auto;
+  
+      }
+  
+    nav{
+        width: 100%;
+    }
+    
+    .button{
+        flex-wrap: wrap;
+        gap: 30px;
+        padding: 25px;
+        margin: 10px;
+       }
+       
+    .title-bra{
+        height: auto;
+    }
+
+
+
+   .trc-pr{
+    height: 90vh;
+   }
+
+   .caixa-van {
+    grid-template-areas: 
+    "bloco1 bloco1"
+    "bloco2 bloco4"
+    "bloco3 bloco4"
+    "bloco5 bloco5"
+    ;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
+}
+
+   .app-geral{
+    flex-direction: column;
+   }
+
+   .caixa-app{
+    overflow: hidden; 
+    max-width: 100%;
+    margin: 0 auto;
+    height: 100%;
+   }
+
+   .app-ft img{
+    max-width: 100%;
+    height: auto;
+   }
+
+   .app-ft{
+    margin: 0 auto;
+    text-align: center;
+
+   }
+   .button-a, .button-b, .button-c, .button-d{
+    display: flex;
+    height: 100px;
+    align-items: center;
+
+   }
+
+   .trc-pr{
+    grid-template-areas: 
+    "trc-dt"
+    "trc-dt"
+    "trc-dt"
+    "trc-dt"
+    ;
+
+}
+
+.carousel{ 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  
+  }
+  
+  .slide img {
+      width: 100%;
+      height: 100%; 
+      object-fit: cover; 
+      display: block;
+  }
+
+}
+
+/* Celulares Pequenos (abaixo de 576px) */
+@media (max-width: 576px) {
+
+    body {
+        overflow-x: hidden;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+  
+      }
+  
+    /* nav{
+        width: 100%;
+    } */
+    
+   .button{
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 25px;
+    margin: 10px;
+   }
+   
+
+   .title-bra{
+    text-align: center;
+   }
+
+   .trc-pr{
+    height: 100vh; 
+   }
+
+   .caixa-van{
+    flex-direction: column;
+    height: auto;
+   }
+
+   .app-geral{
+    flex-direction: column;
+   }
+
+   .caixa-app{
+    overflow: hidden; 
+    max-width: 100%; 
+    margin: 0 auto;
+    height: 100%;
+   }
+
+   .app-ft img{
+    max-width: 100%;
+    height: auto;
+   }
+
+   .app-ft{
+    margin: 0 auto;
+    text-align: center;
+
+   }
+
+   .button-a, .button-b, .button-c, .button-d{
+    display: flex;
+    height: 70px;
+    align-items: center;
+    font-size: 18px;
+   }
+
+   .caixa-van {
+    grid-template-areas: 
+    "bloco1 bloco1"
+    "bloco2 bloco4  "
+    "bloco3 bloco4"
+    "bloco5 bloco5"
+    ;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+
+.trc-pr{
+    grid-template-areas: 
+    "trc-dt"
+    "trc-dt"
+    "trc-dt"
+    "trc-dt"
+    ;
+
+}
+
+.carousel{ 
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.slide img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    display: block;
+}
+
+ }
