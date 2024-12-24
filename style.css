@@ -572,7 +572,7 @@ h1{
    }
 
    .trc-pr{
-    height: 90vh;
+    height: 110vh;
    }
 
    .caixa-van{
@@ -650,7 +650,7 @@ h1{
 
 
    .trc-pr{
-    height: 90vh;
+    height: 110vh;
    }
 
    .caixa-van {
@@ -742,11 +742,12 @@ h1{
    
 
    .title-bra{
+    margin-top: 300px;
     text-align: center;
    }
 
    .trc-pr{
-    height: 100vh; 
+    height: 135vh; 
    }
 
    .caixa-van{
@@ -802,7 +803,13 @@ h1{
     "trc-dt"
     ;
 
+       
 }
+
+.trc-dt{
+    width: 300px;
+}
+
 
 .carousel{ 
   width: 100%;
