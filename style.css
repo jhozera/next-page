@@ -46,7 +46,8 @@ h1{
 
 .button{
     display: flex;
-    justify-content: space-evenly;  
+    justify-content:space-around;
+    flex-wrap: wrap;  
     padding: 30px;
     gap: 70px;
     margin: 0;
@@ -54,11 +55,137 @@ h1{
 
 }
 
+.button-a {
+    position: relative;
+    background-image: url('./imagem/Vantagens-WPP.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    border-radius: 20px; 
+    padding: 20px;
+    overflow: hidden; 
+}
+
+.button-a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(8, 202, 8, 0.7), rgba(0, 0, 0, 0.5)); 
+    z-index: 1;
+}
+
+.button-a p, .button-a a {
+    position: relative;
+    z-index: 2;
+}
+
+.button-a img{
+    position: relative;
+    z-index: 2;
+}
+
+.button-b {
+    position: relative;
+    background-image: url('./imagem/Vantagens-Loja.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    border-radius: 20px; 
+    padding: 20px;
+    overflow: hidden; 
+}
+
+.button-b::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(8, 202, 8, 0.7), rgba(0, 0, 0, 0.5)); 
+    z-index: 1;
+}
+
+.button-b p, .button-b a {
+    position: relative;
+    z-index: 2;
+}
+
+.button-b img{
+    position: relative;
+    z-index: 2;
+}
+.button-c {
+    position: relative;
+    background-image: url('./imagem/vantagensi.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    border-radius: 20px; 
+    padding: 20px;
+    overflow: hidden; 
+}
+
+.button-c::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(8, 202, 8, 0.7), rgba(0, 0, 0, 0.5)); 
+    z-index: 1;
+}
+
+.button-c p, .button-c a {
+    position: relative;
+    z-index: 2;
+}
+
+.button-c img{
+    position: relative;
+    z-index: 2;
+}
+.button-d {
+    position: relative;
+    background-image: url('./imagem/Vantagens-BSC.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    border-radius: 20px; 
+    padding: 20px;
+    overflow: hidden; 
+}
+
+.button-d::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(8, 202, 8, 0.7), rgba(0, 0, 0, 0.5)); 
+    z-index: 1;
+}
+
+.button-d p, .button-d a {
+    position: relative;
+    z-index: 2;
+}
+
+.button-d img{
+    position: relative;
+    z-index: 2;
+}
+
 .button-a, .button-b, .button-c, .button-d {
     padding: 20px;
-    background: linear-gradient(to left, #00ff5f, #183939);
+    /* background: linear-gradient(to left, #00ff5f, #183939); */
     height: 200px;
-    width: 250px;
+    width: 500px;
     font-size: 25px;
     border-radius: 20px;
 
@@ -75,8 +202,8 @@ h1{
 
 .centralizador {
     display: grid;
-    place-items: center; /* Centraliza horizontal e verticalmente */
-    height: 80vh; /* Ocupa toda a altura da tela */
+    place-items: center; 
+    height: 80vh;
 }
 
 .caixa-van {
@@ -87,8 +214,8 @@ h1{
     grid-template-columns: 2fr 2fr 2fr;
     gap: 10px;
     padding: 10px;
-    max-width: 1200px; /* Largura máxima do grid */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    max-width: 1200px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
     height: 700px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -226,11 +353,11 @@ h1{
 
 .trc-dt {
     position: relative; 
-    width: 400px;
+    width: 500px;
     height: 180px; 
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); */
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -241,7 +368,7 @@ h1{
 
 .trc-dt:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 6px 10px rgba(3, 140, 19, 0.7);
 }
 
 .trc-dt img {
@@ -267,8 +394,6 @@ h1{
     box-sizing: border-box;
     font-size: 19px;
     font-family: Arial, Helvetica, sans-serif;
-    
-
 
 }
 
@@ -523,6 +648,7 @@ h1{
 
    .title-bra{
     text-align: center;
+    padding-top: 50px;
    }
 
    .trc-pr{
@@ -545,6 +671,12 @@ h1{
     margin: 0 auto;
     height: 100%;
    }
+
+   .app-ft{
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+    }
 
 }
 
@@ -585,7 +717,7 @@ h1{
 
    .button-a, .button-b, .button-c, .button-d{
     display: flex;
-    height: 100px;
+    height: 140px;
     align-items: center;
 
    }
@@ -620,6 +752,13 @@ h1{
       object-fit: cover; 
       display: block;
   }
+
+  .app-ft{
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+    }
+
 
 }
 
@@ -682,12 +821,16 @@ h1{
    .app-ft{
     margin: 0 auto;
     text-align: center;
+    width: 80%;
+
 
    }
    .button-a, .button-b, .button-c, .button-d{
     display: flex;
     height: 100px;
     align-items: center;
+    height: 140px;
+
 
    }
 
@@ -774,12 +917,13 @@ h1{
    .app-ft{
     margin: 0 auto;
     text-align: center;
+    width: 80%;
 
    }
 
    .button-a, .button-b, .button-c, .button-d{
     display: flex;
-    height: 70px;
+    height: 130px;
     align-items: center;
     font-size: 18px;
    }
